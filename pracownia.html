@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Strona</title>
+        <link rel="stylesheet" href="style3.css">
+        <!--FONTS-->
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    </head>
+    <body>
+        <header>
+            <nav class="navbar">
+                <a href="index.html" class="logo">Strona główna</a>
+                <ul class="menu-links">
+                    <span id="close-menu-btn" class="material-symbols-outlined">close</span>
+                    <li><a href="Pracownia.html">O firmie</a></li>
+                    <li><a href="zakres.html">Zakres uslug</a></li>
+                    <li><a href="przed.html">Przed badaniem</a></li>
+                    <li><a href="kontakt.html">Kontakt</a></li>
+                    <li><i class="fas fa-map-marker-alt"></i> Kalisz, Górnośląska 20/1A</li>
+                    
+                    <li><a href="https://api.whatsapp.com/send/?phone=509879788&text&app_absent=0"><i class="fas fa-phone" style="margin: 2px;"></i>509-879-788</a></li>
+                </ul>
+                <span id="menu-btn" class="material-symbols-outlined">menu</span>
+            </nav>
+        </header>
+
+        <section class="hero-section">
+            <div class="content">
+                <p><h1><center>O FIRMIE</center></h1></p>
+                    <p><center>
+                    <br>
+                    Jesteśmy placówką, świadczącą badania psychologiczne w zakresie psychologii transportu i psychologii pracy.<br><br>
+                    Do profesjonalnego i rzetelnego przeprowadzenia badania wykorzystujemy testy psychologiczne, licencjonowane przez Polskie Towarzystwo Psychologiczne, testy alternatywnych dystrybutorów – (znormalizowane i wystandaryzowane),oraz nowoczesną aparaturę pomiarowo – kontrolną o szerokim spektrum zastosowania.
+ 
+<br>
+Posiadamy zezwolenie Marszałka Województwa Wielkopolskiego do wykonywania badań psychologicznych w zakresie psychologii transportu.
+ 
+<br>
+Oferujemy atrakcyjne formy współpracy dla firm oraz ośrodków szkoleniowych.
+ 
+<br></br>                    
+            Zapraszamy!<br><br>
+                    </center></p>
+                   
+            </div>
+        </section>
+
+        <script>
+            const header = document.querySelector("header");
+            const menuBtn = document.querySelector("#menu-btn");
+            const closeMenuBtn = document.querySelector("#close-menu-btn");
+
+            menuBtn.addEventListener("click", () => {
+                header.classList.toggle("show-mobile-menu");
+            });
+
+            closeMenuBtn.addEventListener("click", () => {
+                menuBtn.click();
+            });
+        </script>
+    </body>
+</html>

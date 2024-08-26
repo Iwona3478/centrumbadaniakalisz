@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pl">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Zakres uslug</title>
+        <link rel="stylesheet" href="style4.css">
+        <!--FONTS-->
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    </head>
+    <body>
+        <header>
+            <nav class="navbar">
+                <a href="index.html" class="logo">Strona główna</a>
+                <ul class="menu-links">
+                    <span id="close-menu-btn" class="material-symbols-outlined">close</span>
+                    <li><a href="Pracownia.html">O firmie</a></li>
+                    <li><a href="zakres.html">Zakres uslug</a></li>
+                    <li><a href="przed.html">Przed badaniem</a></li>
+                    <li><a href="kontakt.html">Kontakt</a></li>
+                    <li><i class="fas fa-map-marker-alt"></i> Kalisz, Górnośląska 20/1A</li>
+                    
+                    <li><a href="https://api.whatsapp.com/send/?phone=509879788&text&app_absent=0"><i class="fas fa-phone" style="margin: 2px;"></i>509-879-788</a></li>
+                </ul>
+                <span id="menu-btn" class="material-symbols-outlined">menu</span>
+            </nav>
+        </header>
+
+        <section class="hero-section">
+                <div class="content">
+                    <h1><center>OFERTA BADAŃ PSYCHOLOGICZNYCH</center></h1>
+                    <p>
+                        <br>
+                        Wykonujemy badania psychologiczne:<br><br></p>
+                    <ul>
+                        <li>kierowców transportu drogowego (przewóz rzeczy i osób)</li>
+                        <li>kandydatów na kierowców kat. C, C+E, D, D+E (kwalifikacja wstępna)</li>
+                        <li>kandydatów do uzyskania uprawnień do kierowania kat. C, C+E, D, D+E</li>
+                        <li>kierowców TAXI</li>
+                        <li>kierowców autobusów</li>
+                        <li>kierowców pojazdów uprzywilejowanych</li>
+                        <li>instruktorów nauki jazdy</li>
+                        <li>egzaminatorów</li>
+                        <li>osób po utracie prawa jazdy za kierowanie pojazdem pod wpływem alkoholu lub innych środków odurzających</li>
+                        <li>osób po spowodowaniu wypadku w ruchu drogowym</li>
+                        <li>osób za przekroczenie liczby 24 punktów karnych</li>
+                        <li>osób skierowanych przez lekarza lub inne organy kontrolne</li>
+                        <li>operatorów sprzętu budowlanego, maszyn drogowych i urządzeń elektrotechnicznych</li>
+                        <li>operatorów wózków widłowych</li>
+                        <li>osób wykonujących prace na wysokości</li>
+                        <li>kierowców pojazdów służbowych i kurierów (kat. B)</li>
+                        
+                        
+                    </ul>
+                </div>
+        </section>
+
+        <script>
+            const header = document.querySelector("header");
+            const menuBtn = document.querySelector("#menu-btn");
+            const closeMenuBtn = document.querySelector("#close-menu-btn");
+
+            menuBtn.addEventListener("click", () => {
+                header.classList.toggle("show-mobile-menu");
+            });
+
+            closeMenuBtn.addEventListener("click", () => {
+                menuBtn.click();
+            });
+        </script>
+        </body>
+</html>
